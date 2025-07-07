@@ -9,7 +9,7 @@
         
         element.innerHTML = `
           <div style="width: 280px; height: 100vh; background-color: #f5f5f5; padding: 16px; box-sizing: border-box;">
-            <h3 style="color: #1976d2; margin-top: 0;">Menu (Remoto)</h3>
+            <h3 style="color: #1976d2; margin-top: 0;">📋 Menu - Carregado Remotamente</h3>
             <ul style="list-style: none; padding: 0; margin: 0;">
               <li style="margin-bottom: 12px;">
                 <a href="#" style="display: flex; align-items: center; color: #1976d2; text-decoration: none; padding: 8px; border-radius: 4px;">
