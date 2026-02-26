@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# sidebar-mf
 
-## Getting Started
+Projeto Next.js: micro frontend "sidebar" — exemplo de componente/lógica para ser usado como micro front-end.
 
-First, run the development server:
+Um README curto e objetivo para explicar como rodar, desenvolver e fazer deploy desta aplicação.
+
+## Sumário
+
+- [Sobre](#sobre)
+- [Tecnologias](#tecnologias)
+- [Pré-requisitos](#pré-requisitos)
+- [Instalação](#instalação)
+- [Scripts úteis](#scripts-úteis)
+- [Estrutura do projeto](#estrutura-do-projeto)
+- [Contribuindo](#contribuindo)
+- [Deploy](#deploy)
+- [Licença](#licença)
+- [Contato](#contato)
+
+## Sobre
+
+Este repositório contém um exemplo de micro front-end implementado com Next.js. O objetivo é demonstrar como construir uma sidebar reutilizável que pode ser exposta/consumida por outras aplicações ou integrada como parte de um sistema maior.
+
+## Tecnologias
+
+- Next.js
+- React
+- TypeScript
+- Node.js
+
+## Pré-requisitos
+
+- Node.js 16+ (recomendado)
+- npm, yarn, pnpm ou bun
+
+## Instalação
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/danvitoriano/sidebar-mf.git
+cd sidebar-mf
+```
+
+2. Instale as dependências (escolha o gerenciador de pacotes):
+
+```bash
+npm install
+# ou
+# yarn
+# ou
+# pnpm install
+```
+
+3. Inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# ou
+# yarn dev
+# pnpm dev
+# bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3002](http://localhost:3002) no navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts úteis
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` — iniciar servidor de desenvolvimento (porta 3002)
+- `npm run build` — gerar build de produção
+- `npm run start` — iniciar aplicação em modo de produção (após build, porta 3002)
+- `npm run lint` — rodar linter
+- `npm run deploy` — realizar deploy para o Vercel em modo de produção
+- `npm run type-check` — verificar tipos TypeScript
 
-## Learn More
+## Estrutura do projeto
 
-To learn more about Next.js, take a look at the following resources:
+- `src/app/` — rotas e páginas (Next.js App Router)
+- `src/components/` — componentes reutilizáveis
+- `public/` — arquivos estáticos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+(Atualize esta seção se a estrutura real do repositório for diferente.)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contribuindo
 
-## Deploy on Vercel
+Contribuições são bem-vindas.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Fork do repositório
+2. Crie uma branch com a sua feature: `git checkout -b minha-feature`
+3. Faça commits com mensagens claras
+4. Abra um Pull Request descrevendo as mudanças
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deploy
+
+Este projeto é compatível com a plataforma Vercel. Para deploy:
+
+1. Conecte o repositório ao Vercel
+2. Configure as variáveis de ambiente (se houver)
+3. Clique em Deploy
+
+Ou utilize o script disponível no projeto:
+
+```bash
+npm run deploy
+```
+
+Veja a [documentação do Next.js](https://nextjs.org/docs/app/building-your-application/deploying) para detalhes de deploy.
+
+## Licença
+
+Se desejar, adicione uma licença (por exemplo, MIT). Se já houver um arquivo LICENSE no repositório, mantenha a licença existente.
+
+## Contato
+
+GitHub: [@danvitoriano](https://github.com/danvitoriano)
